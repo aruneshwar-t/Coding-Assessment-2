@@ -31,10 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
     left: document.getElementById('left-indicator')
   }
 
-  /**
-   *
-   * @param zone
-   */
   function updateZoneConfiguration (zone) {
     zoneTimeInput.value = zones[zone].time
     zoneOrderInput.value = zones[zone].order
