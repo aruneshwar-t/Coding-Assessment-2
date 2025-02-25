@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="setup-half">
+            <div class="selector-container">
+                <h4>Selector</h4>
+                <div class="selector">
+                    <div class="run-mode-input">
+                        <label for="run-mode">Run Mode?</label>
+                        <input type="checkbox" id="run-mode" name="run-mode">
+                    </div>
+                    <div class="zone-select-input">
+                        <div class="radio-front">
+                            <label for="radio-front">Front</label>
+                            <input type="radio" id="radio-front" value="front" name="zone">
+                        </div>
+                        <div class="radio-back">
+                            <label for="radio-back">Back</label>
+                            <input type="radio" id="radio-back" value="back" name="zone">
+                        </div>
+                        <div class="radio-right">
+                            <label for="radio-right">Right</label>
+                            <input type="radio" id="radio-right" value="right" name="zone">
+                        </div>
+                        <div class="radio-left">
+                            <label for="radio-left">Left</label>
+                            <input type="radio" id="radio-left" value="left" name="zone">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="zone-configuration-container">
+                <h4>Zone Configuration</h4>
+                <div class="zone-configuration">
+                    <div class="zone-order">
+                        <label for="zone-order">Zone Order</label>
+                        <input type="range" min="1" max="4" value="1" id="zone-order">
+                        <div class="zone-order-ruler">
+                            <div>1</div>
+                            <div>2</div>
+                            <div>3</div>
+                            <div>4</div>
+                        </div>
+                    </div>
+                    <div class="zone-time">
+                        <label for="zone-time">Zone Time (sec)</label>
+                        <input type="number" id="zone-time" min="1" max="15">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="run-half">
+            <div class="zone-indicators-container">
+                <h4>Zone Indicators</h4>
+                <div class="zone-indicators">
+                    <div class="left-third">
+                        <div class="indicator" id="left-indicator">LEFT</div>
+                    </div>
+                    <div class="middle-third">
+                        <div class="indicator" id="front-indicator">FRONT</div>
+                        <div class="indicator" id="back-indicator">BACK</div>
+                    </div>
+                    <div class="right-third">
+                        <div class="indicator" id="right-indicator">RIGHT</div>
+                    </div>
+                </div>
+            </div>
+            <div class="timer-container">
+                <h4>Timer</h4>
+                <div class="timer">
+                    <div class="timer-box">
+                        00 : 00
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="func-btns">
+            <div class="power-btn">
+                <input type="button" id="power-btn" value="OFF">
+                <label for="power-btn">Power</label>
+            </div>
+            <div class="reset-btn">
+                <div class="button-wrapper">
+                    <img src="../../assets/reset.svg" alt="icon" class="button-icon">
+                    <span>Reset</span>
+                </div>
+            </div>
+        </div>
+        <script src="../JS/script.js" type="module"></script>
+</body>
+
+</html>
