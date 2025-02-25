@@ -1,0 +1,14 @@
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --light-green: #CCE2B7;
+    --green: #63843C;
+    --yellow: #FAF4CF;
+    --dark-green: #425928;
+    --bg-color: #E6F1DA;
+    --ind-color: #B4D393;
+}
+
+h4{
+    margin-top:10px;
+}
